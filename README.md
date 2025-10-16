@@ -1,16 +1,102 @@
-# React + Vite
+# Todo Task Manager 📝
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive todo/task management application built with React and Vite. This app allows users to efficiently manage their daily tasks with full CRUD functionality and persistent storage.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Add Tasks**: Create new tasks with ease
+- **Edit Tasks**: Update existing tasks inline
+- **Delete Tasks**: Remove completed or unwanted tasks
+- **Mark Complete**: Toggle task completion status
+- **Persistent Storage**: Tasks are saved to localStorage
+- **Responsive Design**: Works seamlessly on desktop and mobile
+- **Real-time Updates**: Instant UI updates without page refresh
 
-## React Compiler
+## 🚀 Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend**: React 18 with Hooks
+- **Build Tool**: Vite for lightning-fast development
+- **Styling**: Modern CSS with responsive design
+- **State Management**: React Context API
+- **Storage**: Browser localStorage for data persistence
+- **Code Quality**: ESLint configuration included
 
-## Expanding the ESLint configuration
+## 📦 Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Clone the repository**
+
+   ```bash
+   git clone <your-repo-url>
+   cd context-project-localStorage
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Set up environment variables**
+
+   ```bash
+   # Create a .env file in the root directory
+   VITE_GOOGLE_CLIENT_ID=your_google_client_id_here
+   ```
+
+4. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+## 🎯 Usage
+
+1. **Adding Tasks**: Click the "Add Task" button or press Enter in the input field
+2. **Editing Tasks**: Double-click on any task to edit it inline
+3. **Marking Complete**: Click the checkbox next to a task to mark it as complete
+4. **Deleting Tasks**: Click the delete button (🗑️) to remove a task
+5. **Persistence**: All changes are automatically saved to localStorage
+
+## 🛠️ Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint for code quality
+
+## 📁 Project Structure
+
+```
+src/
+├── components/         # React components
+├── context/           # Context providers
+├── hooks/             # Custom React hooks
+├── utils/             # Utility functions
+├── styles/            # CSS stylesheets
+└── App.jsx            # Main application component
+```
+
+## 🔧 Configuration
+
+The project uses Vite's environment variable system. Make sure to:
+
+- Prefix environment variables with `VITE_`
+- Place the `.env` file in the project root
+- Restart the dev server after adding new variables
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 🙏 Acknowledgments
+
+- Built with React and Vite
+- Inspired by modern task management principles
+- Part of the "Chai aur Code" React course
+
+---
+
+**Happy Task Managing! 🎉**
