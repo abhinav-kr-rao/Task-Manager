@@ -11,9 +11,9 @@ export default function Home() {
 
 
     const addTodo = (currTodo) => {
+        currTodo.todo = currTodo.todo.trim();
 
-        console.log("Addring this task ", currTodo);
-        if (!currTodo && currTodo.trim().length == 0)
+        if (!currTodo || currTodo.todo.length == 0)
             return;
         setTodos((prevValues) => [...prevValues, { id: Date.now(), ...currTodo }]);
     }
@@ -59,8 +59,6 @@ export default function Home() {
                     <div className="flex flex-wrap gap-y-3">
                         {/*Loop and Add TodoItem here */}
                         {todos.map((todo) => {
-                            console.log(todo);
-
                             return (<div key={todo.id} className="w-full">
                                 <TodoItem todo={todo} />
                             </div>
